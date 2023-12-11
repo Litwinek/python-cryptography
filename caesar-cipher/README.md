@@ -25,4 +25,4 @@ def caesar_encrypt(plain_text):
 ###### Następnym krokiem będzie zdefiniowanie na zmiennej plain_text który przyjmuje funkcja metody upper() która pozwoli pominąć rozróżnianie szyfru ze względu na wielkość liter. Potem używając pętli iterujemy po njaszej wiadomości przekazanej do funkcji w postaci plain_text. W pętli deklarujemy nową zmienną index przechowującą index każdej z liter naszej wiadomości do zaszyfrowania. Następnie nadpisujemy zmienną index i wykonujuemy działanie szyfrujące według wzoru opisanego powyżej. Kolejnym krokiem jest utworzenie zmiennej cipher_text która będzie szyfrowała kolejno każdą z liter naszej wiadomości. Na końcu zwracamy naszą zmienną szyfr która przechowuje zaszyfrowany text.
 
 ###### Aby odszyfrować naszą wiadomość która została już zaszyfrowana musimy wyznaczyć funkcję odwrotną do funkcji szyfrującej. To będzie funkcja zamieszczona poniżej.
-![równanie-szyfr-cezara](encryption-equation.png)
+![równanie-szyfr-cezara-2](decryption-equation.png)
