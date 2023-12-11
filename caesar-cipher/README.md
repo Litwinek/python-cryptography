@@ -26,3 +26,15 @@ def caesar_encrypt(plain_text):
 
 ##### Aby odszyfrować naszą wiadomość która została już zaszyfrowana musimy wyznaczyć funkcję odwrotną do funkcji szyfrującej. To będzie funkcja zamieszczona poniżej.
 ![równanie-szyfr-cezara-2](decryption-equation.png)
+
+##### Następnym krokiem jest utworzenie funckji odszyfrowującej przyjmującej szyfr w tym przypadku cipher_text.
+```python
+def caesar_decrypt(cipher_text):
+    plain_text = ''
+    for c in cipher_text:
+        index = ALPHABET.find(c)
+        index = (index - KEY) % len(ALPHABET)
+        plain_text = plain_text + ALPHABET[index]
+    return plain_text
+```
+##### Powyższa funkcja działa bardzo podobnie do funkcji szyfrującej lecz pętla zamiast iterować po naszej wiadomości do zaszyfrowania, iteruje po szyfrze a następnie odszyfrowuje go według wzoru na odszyfrowanie który został zamieszczony powyżej. W rezultacie funkcja na końcu zwraca odszyfrowany tekst.
